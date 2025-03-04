@@ -121,3 +121,17 @@ db.livres.find({titre: {$regex: "Harry Potter"}})
 ```json
 db.livres.find({prix: {$gt: 10, $lt: 20}})
 ```
+
+
+## Partie 6
+
+### 6.1
+
+1. Créez une nouvelle collection emprunts qui utilise des références vers les livres et les utilisateurs
+2. Insérez au moins 3 emprunts dans cette collection
+
+    ![ajout collection](image/image4.png)
+
+3. Comparez cette approche avec celle où les emprunts sont directement intégrés dans le document utilisateur
+ 
+Cette approche permet de séparer les données des emprunts des données des utilisateurs et des livres. Cela permet de garder les données plus propres et de ne pas dupliquer les données des livres et des utilisateurs dans chaque emprunt. Cela permet également de gérer plus facilement les emprunts et de les retrouver plus facilement.

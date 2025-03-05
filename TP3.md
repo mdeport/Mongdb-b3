@@ -135,3 +135,17 @@ db.livres.find({prix: {$gt: 10, $lt: 20}})
 3. Comparez cette approche avec celle où les emprunts sont directement intégrés dans le document utilisateur
  
 Cette approche permet de séparer les données des emprunts des données des utilisateurs et des livres. Cela permet de garder les données plus propres et de ne pas dupliquer les données des livres et des utilisateurs dans chaque emprunt. Cela permet également de gérer plus facilement les emprunts et de les retrouver plus facilement.
+
+### 6.2
+
+1. Quels sont les avantages et inconvénients de chaque approche ?
+
+les avantages de la première approche sont que les données sont plus propres et plus faciles à gérer. Les inconvénients sont que cela nécessite plus de requêtes pour récupérer les données des emprunts.
+les avantages de la deuxième approche sont que les données sont plus faciles à récupérer et à manipuler. Les inconvénients sont que les données sont plus redondantes et moins propres.
+
+2. Quelle approche privilégieriez-vous pour une application réelle et pourquoi ?
+
+Je privilégierais la première approche pour une application réelle car elle permet de garder les données plus propres et plus faciles à gérer. Cela permet également de mieux séparer les données et de les retrouver plus facilement.
+
+3. Comment modéliseriez-vous les cas où un même livre peut exister en plusieurs exemplaires ?
+
